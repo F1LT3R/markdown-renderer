@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "nyc ava --reporter=lcov lib/**/*.test.js --verbose"
+    "test": "nyc --reporter=lcov --reporter=html ava lib/**/*.test.js --verbose && echo \"Coverage report: coverage/lcov-report/index.html\""
   },
   "dependencies": {
     "bluebird": "^3.5.0"
